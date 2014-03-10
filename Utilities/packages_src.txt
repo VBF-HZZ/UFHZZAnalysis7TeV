@@ -1,0 +1,33 @@
+V04-01-03      RecoLuminosity/LumiDB                            
+V00-02-10      UserCode/CMG/CMGTools/External CMGTools/External                                
+V00-03-05-10   CommonTools/ParticleFlow                         
+V06-23-01      CondFormats/DataRecord                           
+V01-02-13      CondFormats/EcalObjects                          
+V00-04-00      CondFormats/EgammaObjects                        
+V02-05-11      DataFormats/CaloRecHit                           
+V06-04-39      DataFormats/PatCandidates                        
+U09-01-05-01   DataFormats/MuonReco                             
+V00-00-02-44X  EgammaAnalysis/ElectronTools                     
+V00-00-70      FWCore/GuiBrowsers                               
+V08-07-52      PhysicsTools/PatAlgos                            
+V03-09-18-03   PhysicsTools/PatUtils                            
+V05-08-24      RecoEcal/EgammaCoreTools                         
+V08-11-10-02   RecoEgamma/EgammaTools 
+V00-03-32      RecoEgamma/ElectronIdentification                
+V02-04-17      RecoJets/Configuration                           
+V04-01-00      RecoJets/JetAlgorithms                           
+V05-05-03      RecoJets/JetProducers   
+bonato_supermela_20121107 HZZ4L_Combination/CombinationPy
+V00-03-01      Higgs/Higgs_CS_and_Width
+V01-13-02      HiggsAnalysis/CombinedLimit
+V00-02-01      UserCode/CJLST/ZZMatrixElement/MELA ZZMatrixElement/MELA 
+V00-02-00      UserCode/UFL/ZZMatrixElement/MEKD ZZMatrixElement/MEKD
+V00-00-12      UserCode/HZZ4l_MEM/ZZMatrixElement/MEMCalculators ZZMatrixElement/MEMCalculators
+
+#in DF/MuonReco you must change "isPFMuon()" to "userInt("pfMuId")"
+
+#cvs update -r 1.6 HiggsAnalysis/CombinedLimit/src/HZZ2L2QRooPdfs.cc 
+#cvs update -r 1.11 HiggsAnalysis/CombinedLimit/src/HZZ4LRooPdfs.cc
+#cvs update -r 1.5 HiggsAnalysis/CombinedLimit/interface/HZZ2L2QRooPdfs.h
+#cvs update -r 1.10 HiggsAnalysis/CombinedLimit/interface/HZZ4LRooPdfs.h  
+#wget www.cern.ch/amapane/H4l/CMSSW/444/HiggsAnalysis/LinkDef.h; mv LinkDef.h HiggsAnalysis/CombinedLimit/src
