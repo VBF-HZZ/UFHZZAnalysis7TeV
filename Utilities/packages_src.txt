@@ -17,8 +17,8 @@ V00-03-32      RecoEgamma/ElectronIdentification
 V02-04-17      RecoJets/Configuration                           
 V04-01-00      RecoJets/JetAlgorithms                           
 V05-05-03      RecoJets/JetProducers   
-bonato_supermela_20121107 HZZ4L_Combination/CombinationPy
-V00-03-01      Higgs/Higgs_CS_and_Width
+bonato_supermela_20121107 UserCode/HZZ4L_Combination/CombinationPy HZZ4L_Combination/CombinationPy
+V00-03-01      UserCode/Snowball/Higgs/Higgs_CS_and_Width Higgs/Higgs_CS_and_Width
 V01-13-02      HiggsAnalysis/CombinedLimit
 V00-02-01      UserCode/CJLST/ZZMatrixElement/MELA ZZMatrixElement/MELA 
 V00-02-00      UserCode/UFL/ZZMatrixElement/MEKD ZZMatrixElement/MEKD

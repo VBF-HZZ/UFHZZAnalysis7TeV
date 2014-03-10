@@ -45,6 +45,9 @@ def installPackages():
 
         if len(f) == 2:
             cmd = 'cvs co -r '+f[0]+' '+f[1]
+            if os.path.isdir(f[1]):
+                print f[1],"already exists..."
+                continue
         if len(f) == 3:
             #cmd = 'cvs co -r '+f[0]+' -d '+f[2]+' '+f[1]
             if os.path.isdir(f[2]):
