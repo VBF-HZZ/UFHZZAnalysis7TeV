@@ -5567,6 +5567,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		  idL1_GENMatched = mPdgId; pTL1_GENMatched = m.Pt(); 
 		  pXL1_GENMatched = m.Px(); pYL1_GENMatched = m.Py(); pZL1_GENMatched = m.Pz(); EL1_GENMatched = m.Energy(); 
 		  chargeL1_GENMatched = charge;
+		  etaL1_GENMatched = m.Eta(); phiL1_GENMatched = m.Phi();
 		  if(genZ1 != NULL)
 		    {
 		      EZ1_GENMatched = genZ1->Energy();  pTZ1_GENMatched = genZ1->Pt(); pXZ1_GENMatched = genZ1->Px(); 
@@ -5578,6 +5579,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		idL3_GENMatched = mPdgId; pTL3_GENMatched = m.Pt();
 		pXL3_GENMatched = m.Px(); pYL3_GENMatched = m.Py(); pZL3_GENMatched = m.Pz(); EL3_GENMatched = m.Energy();
 		chargeL3_GENMatched = charge; 
+		etaL3_GENMatched = m.Eta(); phiL3_GENMatched = m.Phi();
 		if(genZ1 != NULL)
 		  {
 		    EZ2_GENMatched = genZ1->Energy();  pTZ2_GENMatched = genZ1->Pt(); pXZ2_GENMatched = genZ1->Px();
@@ -5594,12 +5596,14 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		  idL2_GENMatched = mPdgId; pTL2_GENMatched = m.Pt(); 
 		  pXL2_GENMatched = m.Px(); pYL2_GENMatched = m.Py(); pZL2_GENMatched = m.Pz(); EL2_GENMatched = m.Energy(); 
 		  chargeL2_GENMatched = charge; 
+		  etaL2_GENMatched = m.Eta(); phiL2_GENMatched = m.Phi();
 		}
 	      else{
 		m4 = m;
 		idL4_GENMatched = mPdgId; pTL4_GENMatched = m.Pt();
 		pXL4_GENMatched = m.Px(); pYL4_GENMatched = m.Py(); pZL4_GENMatched = m.Pz(); EL4_GENMatched = m.Energy();
 		chargeL4_GENMatched = charge;
+		etaL4_GENMatched = m.Eta(); phiL4_GENMatched = m.Phi();
 	      }
 	    }
 	  if(i == 2)
@@ -5608,6 +5612,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	      idL3_GENMatched = mPdgId; pTL3_GENMatched = m.Pt(); 
 	      pXL3_GENMatched = m.Px(); pYL3_GENMatched = m.Py(); pZL3_GENMatched = m.Pz(); EL3_GENMatched = m.Energy(); 
 	      chargeL3_GENMatched = charge; 
+	      etaL3_GENMatched = m.Eta(); phiL3_GENMatched = m.Phi();
 	      if(genZ1 != NULL)
 		{
 		  EZ2_GENMatched = genZ1->Energy();  pTZ2_GENMatched = genZ1->Pt(); pXZ2_GENMatched = genZ1->Px();
@@ -5620,6 +5625,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	      idL4_GENMatched = mPdgId; pTL4_GENMatched = m.Pt(); 
 	      pXL4_GENMatched = m.Px(); pYL4_GENMatched = m.Py(); pZL4_GENMatched = m.Pz(); EL4_GENMatched = m.Energy(); 
 	      chargeL4_GENMatched = charge; 
+	      etaL4_GENMatched = m.Eta(); phiL4_GENMatched = m.Phi();
 	    }
 	  
 	}
@@ -5655,6 +5661,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		  idL1_GENMatched = mPdgId; pTL1_GENMatched = m.Pt(); 
 		  pXL1_GENMatched = m.Px(); pYL1_GENMatched = m.Py(); pZL1_GENMatched = m.Pz(); EL1_GENMatched = m.Energy(); 
 		  chargeL1_GENMatched = charge; 
+		  etaL1_GENMatched = m.Eta(); phiL1_GENMatched = m.Phi();
 		  if(genZ1 != NULL)
 		    {
 		      EZ1_GENMatched = genZ1->Energy();  pTZ1_GENMatched = genZ1->Pt(); pXZ1_GENMatched = genZ1->Px(); 
@@ -5666,6 +5673,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		idL3_GENMatched = mPdgId; pTL3_GENMatched = m.Pt();
 		pXL3_GENMatched = m.Px(); pYL3_GENMatched = m.Py(); pZL3_GENMatched = m.Pz(); EL3_GENMatched = m.Energy();
 		chargeL3_GENMatched = charge; 
+		etaL3_GENMatched = m.Eta(); phiL3_GENMatched = m.Phi();
 		if(genZ1 != NULL)
 		  {
 		    EZ2_GENMatched = genZ1->Energy();  pTZ2_GENMatched = genZ1->Pt(); pXZ2_GENMatched = genZ1->Px();
@@ -5681,12 +5689,14 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 		  idL2_GENMatched = mPdgId; pTL2_GENMatched = m.Pt(); 
 		  pXL2_GENMatched = m.Px(); pYL2_GENMatched = m.Py(); pZL2_GENMatched = m.Pz(); EL2_GENMatched = m.Energy(); 
 		  chargeL2_GENMatched = charge; 
+		  etaL2_GENMatched = m.Eta(); phiL2_GENMatched = m.Phi();
 		}
 	      else{
 		m4 = m;
 		idL4_GENMatched = mPdgId; pTL4_GENMatched = m.Pt();
 		pXL4_GENMatched = m.Px(); pYL4_GENMatched = m.Py(); pZL4_GENMatched = m.Pz(); EL4_GENMatched = m.Energy();
 		chargeL4_GENMatched = charge; 
+		etaL4_GENMatched = m.Eta(); phiL4_GENMatched = m.Phi();
 	      }
 	    }
 	  if(i == 2)
@@ -5695,6 +5705,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	      idL3_GENMatched = mPdgId; pTL3_GENMatched = m.Pt(); 
 	      pXL3_GENMatched = m.Px(); pYL3_GENMatched = m.Py(); pZL3_GENMatched = m.Pz(); EL3_GENMatched = m.Energy(); 
 	      chargeL3_GENMatched = charge; 
+	      etaL3_GENMatched = m.Eta(); phiL3_GENMatched = m.Phi();
 	      if(genZ1 != NULL)
 		{
 		  EZ2_GENMatched = genZ1->Energy();  pTZ2_GENMatched = genZ1->Pt(); pXZ2_GENMatched = genZ1->Px();
@@ -5707,6 +5718,7 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	      idL4_GENMatched = mPdgId; pTL4_GENMatched = m.Pt(); 
 	      pXL4_GENMatched = m.Px(); pYL4_GENMatched = m.Py(); pZL4_GENMatched = m.Pz(); EL4_GENMatched = m.Energy(); 
 	      chargeL4_GENMatched = charge; 
+	      etaL4_GENMatched = m.Eta(); phiL4_GENMatched = m.Phi();
 	    }
 	  
 	}
