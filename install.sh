@@ -12,9 +12,13 @@ tar xvzf UFHZZAnalysis7TeV/requiredPackages.tgz
 scram b -j12
 
 # aslo install submit scripts
-#cd ../../
-#git clone https://github.com/VBF-HZZ/SubmitArea_7TeV.git
-#cd SubmitArea_7TeV
-#git checkout -b testProd origin/testProd
+cd ../../
+git clone https://github.com/VBF-HZZ/SubmitArea_7TeV.git
+cd SubmitArea_7TeV
+git checkout -b testProd origin/testProd
+cd bin
+gmake
+cd ../
+
 
 
