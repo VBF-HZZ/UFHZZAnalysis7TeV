@@ -5559,6 +5559,8 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	  if(mPdgId > 0) charge = -1;
 	  else charge = 1;
 
+          if (m.Pt()<=0.0) continue;
+
 	  if(i == 0)
 	    {
 	      if(!RecoTwoETwoMuEvent)
@@ -5652,6 +5654,8 @@ void UFHZZ4LAna::setGENMatchedVariables(std::vector<pat::Muon> selectedMuons, st
 	  int charge;
 	  if(mPdgId > 0) charge = -1;
 	  else charge = 1;
+
+          if (m.Pt()<=0.0) continue;
 
 	  if(i == 0)
 	    {
